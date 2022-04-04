@@ -14,7 +14,8 @@ A collection of awesome things regarding the React ecosystem.
     - [Docs](https://vitejs.dev/guide/#overview)
 
 ### Login
-  - [Supabase]()
+  - [Supabase](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Login/Supabase.md)
+    - [Docs](https://supabase.com/docs/guides/auth/auth-email)
 
 ### Payment-Gateway
   - [Flutterwave](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/PaymentGateway/Flutterwave.md)
