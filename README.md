@@ -9,9 +9,9 @@ A collection of awesome things regarding the React ecosystem.
 
 ### React
 
-
 ### BuildTools
-  - [Vitejs]()
+  - [Vitejs](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/BuildTools/vitejs.md)
+    - [Docs](https://vitejs.dev/guide/#overview)
 
 ### Login
   - [Supabase]()
@@ -20,8 +20,8 @@ A collection of awesome things regarding the React ecosystem.
   - [Flutterwave](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/PaymentGateway/Flutterwave.md)
     - [Docs](https://github.com/Flutterwave/Flutterwave-React-v3)
   - [Stripe](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/PaymentGateway/stripe-react.md)
+    - [Docs](https://stripe.com/docs/libraries?html-or-react=react)
 
 ### Utils
-  - [Lodash]()
+  - [Lodash](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/lodash.md)
     - [Docs](https://lodash.com/docs)
-  
