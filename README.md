@@ -2,9 +2,9 @@
 A collection of awesome things regarding the React ecosystem.
 
 - [React](#react)
-  - [Payment Gateway](#payment gateway)
+  - [Payment-gateway](#payment-gateway)
 
 
 ### React
 
-### Payment Gateway
+### Payment-Gateway
