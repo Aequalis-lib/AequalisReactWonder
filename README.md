@@ -1,5 +1,5 @@
 # AequalisReactWonder
-A collection of awesome things regarding the React ecosystem.
+A collection of wonderful things regarding the React ecosystem.
 
 - [React](#react)
   - [BuildTools](#buildtools)
