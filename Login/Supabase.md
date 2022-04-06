@@ -77,7 +77,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 here after you can use supabase client to interact with your database.
 
-### Signup using email and password
+### Signup using email and password:
 
 - create a signup form with input fields.
 - import supabase client in your signup form.
@@ -105,7 +105,7 @@ const handleValidSubmit = async (values) => {
 
 above code will signup the user and redirect to login page. you can view signed users details in supabase dashboard in Authentication section.
 
-### Login using email and password
+### Login using email and password:
 
 - create a login form with input fields.
 - import supabase client in your login form.
@@ -117,7 +117,7 @@ const { user, session, error } = await supabase.auth.signIn({
 });
 ```
 
-### Signup and login using Magic link
+### Signup and login using Magic link:
 
 - import supabase client in your login form.
 - create a login form with a single input for getting user email.
@@ -141,9 +141,9 @@ const handleLogin = async (e) => {
 
 note : you must need to confirm your mail address before you can login.
 
-### Signup and login using Social Providers
+### Signup and login using Social Providers:
 
-### Facebook Login
+### Facebook Login :
 
 - To enable Facebook Auth for your project, you need to set up a Facebook OAuth application and add the application credentials to your Supabase Dashboard.
 
@@ -171,8 +171,8 @@ note : you must need to confirm your mail address before you can login.
   - Under Config / URL you'll find your API URL, you can click Copy to copy it to the clipboard.
   - Now just add /auth/v1/callback to the end of that to get your full OAuth Redirect URI.
 
-    **3.Set up FaceBook Login for your Facebook App**
-    From the Add Products to your App screen:
+  **3.Set up FaceBook Login for your Facebook App**
+  From the Add Products to your App screen:
 
   - Click Setup under Facebook Login
   - Skip the Quickstart screen, instead, in the left sidebar, click Settings under Facebook Login
@@ -215,10 +215,64 @@ note : you must need to confirm your mail address before you can login.
   }
   ```
 
+### Google Login :
+
+- you need a Google Oauth application for enabling google Oauth functionality.
+
+There are 3 steps:
+
+- Create & configure a Google project in GCP.
+- add Oauth keys to supabase project.
+- add the login code to supabase client app.
+
+> Create & configure a google proj in GCP
+
+- Go to [clound.google.com](https://cloud.google.com/)
+- Do login and create a project in GCP
+- Go to console
+- in the search bar search for OAuth click on OAuth consent screen
+- On the consent screen select External then click create.
+
+> Callback URL
+
+- We need callback URL
+- Go to your supabase project dashboard.
+- In the settings there you can see API section there you see an URL You can copy that then add /auth/V1/callback, that is our callback URL.
+
+> create your credentials
+
+- In the console go to credentials
+- click create credentials then click your application type
+- fill app name
+- enter your callback URL in Authorized redirect URIs
+- click save changes and click on create. then copy your credentials.
+
+> add OAuth keys to supabase project
+
+- goto supanbase dashboard click the authentication icon in sidebar
+- click settings to go to authentication settings
+- enter the final hosted URL
+- under external OAuth providers turn google enabled to ON
+- Enter your Google Client ID and Google client secret then click save.
+
+> add login code to your app
+
+- add the below code snippet in client app.
+
+```javascript
+async function signInWithGoogle() {
+  const { user, session, error } = await supabase.auth.signIn({
+    provider: "google",
+  });
+}
+```
+
+---
+
 you can integrate some of the social providers in your app. you can refer the below link
 [Supabase Authentication Docs](https://supabase.com/docs/guides/auth/auth-email)
 
-### Extra Notes
+### Extra Notes:
 
 - In default you can't able to update the auth users table because of security issues. alternatively you can create a table in database for storing auth users.then insert the user details in this table.
 - Create a table in database for storing auth users.
