@@ -51,7 +51,7 @@ leave the page to check calendar.
 3. To help the browser auto-complete the form, use established name's for elements and include the    autocomplete attribute.
 
 Ex. 
-> ![Lebel](./Example1.png "Label")
+> ![Lebel](Example1.PNG "Label")
 
 ## Label Sizing and Placement:
 1. Labels and inputs should be large enough.
@@ -62,7 +62,7 @@ Ex.
 2. Fields can be auto-populated based on the previously specified data by the user by providing both the name attribute and the autocomplete attribute on each input element.
     
 Example:
-> ![Autocomplete](./Example2.png "Autocomplete")
+> ![Autocomplete](Example2.PNG "Autocomplete")
 
 | Content Type      | Name Attribute |Autocomplete Attribute     |
 | :---- | :---- | :--- |
@@ -77,7 +77,7 @@ Example:
 -  When set, desktop browsers immediately move the focus to the input field, making it easy for users to quickly begin using the form. Mobile browsers ignore the autofocus attribute, to prevent the keyboard from randomly appearing.
 
 Ex. 
-> ![Autofocus](Example3.png "Autofocus")
+> ![Autofocus](Example3.PNG "Autofocus")
 
 ## Provide real-time validation:
 - Leverage the browser's built-in validation attributes like pattern, required, min, max, etc.
@@ -88,7 +88,7 @@ Ex.
 - `pattern` attribute:
   * The pattern attribute specifies a regular expression used to validate an input field. For example, to validate a US Zip code (5 digits, sometimes followed by a dash and an additional 4 digits), we would set the pattern like this:
 
-    > ![Pattern](./Pattern.png "Pattern")
+    > ![Pattern](Pattern.PNG "Pattern")
 
     | Regular Expressions | |
     | --- | ----------- |
@@ -96,25 +96,25 @@ Ex.
     |Zip Code (US) | ^\d{5,6}(?:[-\s]\d{4})?$
 - `required` attribute
     * If the required attribute is present, then the field must contain a value before the form can be submitted. For example, to make the zip code required, we'd simply add the required attribute:
-        > ![Required](./Required.png "Required")
+        > ![Required](Required.PNG "Required")
 - `min`, `max` and `step` attributes:
     * For numeric input types like number or range as well as date/time inputs, you can specify the minimum and maximum values, as well as how much they should each increment/decrement when adjusted by the slider or spinners. For example, a shoe size input would set a minimum size of 1 and a maximum size 13, with a step of 0.5
 
-        > ![MinMaxStep](MinMaxStep.png "MinMaxStep")
+        > ![MinMaxStep](MinMaxStep.PNG "MinMaxStep")
 - `maxlength`, `minlength` attribute:
     * These attribute can be used to specify the maximum, min length of an input or textbox and is useful when you want to limit the length of information that the user can provide. For example,
 
-        > ![MaxLength](MaxLength.png "MaxLength")
+        > ![MaxLength](MaxLength.PNG "MaxLength")
         
-        > ![MinLength](MinLength.png "MinLength")
+        > ![MinLength](MinLength.PNG "MinLength")
 -  `novalidate` attribute:
     * In some cases, you may want to allow the user to submit the form even if it contains invalid input. To do this, add the novalidate attribute to the form element, or individual input fields. In this case, all pseudo classes and JavaScript APIs will still allow you to check if the form validates.
-        > ![NoValidate](NoValidate.png "NoValidate")
+        > ![NoValidate](NoValidate.PNG "NoValidate")
 ## Real Time Validation:
 When the built-in validation plus regular expressions aren't enough, you can use the [Constraint Validation API](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constraints), a powerful tool for handling custom validation. 
-> ![ValidationTable](ValidationTable.png "ValidationTable")
+> ![ValidationTable](ValidationTable.PNG "ValidationTable")
 ## Feedback In Real-Time:
 - It's helpful to provide a visual indication on each field that indicates whether the user has completed the form properly before they've submitted the form. HTML5 also introduces a number of new pseudo-classes that can be used to style inputs based on their value or attributes.
-> ![RTFeedback](RTFeedback.png "RTFeedback")
+> ![RTFeedback](RTFeedback.PNG "RTFeedback")
 - Validation happens immediately which means that when the page is loaded, fields may be marked as invalid, even though the user hasn't had a chance to fill them in yet. It also means that as the user types, and it's possible they'll see the invalid style while typing. To prevent this, you can combine the CSS with JavaScript to only show invalid styling when the user has visited the field.
-> ![ValidationCSS](ValidationCSS.png "ValidationCSS")
+> ![ValidationCSS](ValidationCSS.PNG "ValidationCSS")
