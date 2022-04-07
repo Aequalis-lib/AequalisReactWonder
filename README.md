@@ -7,6 +7,7 @@ A collection of wonderful things regarding the React ecosystem.
   - [Payment-gateway](#payment-gateway)
   - [Forms](#forms)
   - [Utils](#utils)
+  - [SOLID Principles](#solid-principles)
 
 ### React
 
@@ -31,3 +32,9 @@ A collection of wonderful things regarding the React ecosystem.
 ### Utils
   - [Lodash](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/lodash.md)
     - [Docs](https://lodash.com/docs)
+
+### SOLID Principles
+- [SOLID](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/SOLID_Principles/solid-principles.md)
+  - [Docs_1](https://www.everydayreact.com/articles/solid-principles-in-react)
+  - [Docs_2](https://www.youtube.com/watch?v=9PgcXvqIaos&t=4s)
+  - [Docs_2](https://www.youtube.com/watch?v=UQqY3_6Epbg&t=91s)
