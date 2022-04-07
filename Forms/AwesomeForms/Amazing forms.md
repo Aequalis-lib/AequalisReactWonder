@@ -51,7 +51,7 @@ leave the page to check calendar.
 3. To help the browser auto-complete the form, use established name's for elements and include the    autocomplete attribute.
 
 Ex. 
-> ![Lebel](Example1.png "Label")
+> ![Lebel](./Example1.png "Label")
 
 ## Label Sizing and Placement:
 1. Labels and inputs should be large enough.
@@ -62,7 +62,7 @@ Ex.
 2. Fields can be auto-populated based on the previously specified data by the user by providing both the name attribute and the autocomplete attribute on each input element.
     
 Example:
-> ![Autocomplete](Example2.png "Autocomplete")
+> ![Autocomplete](./Example2.png "Autocomplete")
 
 | Content Type      | Name Attribute |Autocomplete Attribute     |
 | :---- | :---- | :--- |
@@ -88,7 +88,7 @@ Ex.
 - `pattern` attribute:
   * The pattern attribute specifies a regular expression used to validate an input field. For example, to validate a US Zip code (5 digits, sometimes followed by a dash and an additional 4 digits), we would set the pattern like this:
 
-    > ![Pattern](Pattern.png "Pattern")
+    > ![Pattern](./Pattern.png "Pattern")
 
     | Regular Expressions | |
     | --- | ----------- |
@@ -96,7 +96,7 @@ Ex.
     |Zip Code (US) | ^\d{5,6}(?:[-\s]\d{4})?$
 - `required` attribute
     * If the required attribute is present, then the field must contain a value before the form can be submitted. For example, to make the zip code required, we'd simply add the required attribute:
-        > ![Required](Required.png "Required")
+        > ![Required](./Required.png "Required")
 - `min`, `max` and `step` attributes:
     * For numeric input types like number or range as well as date/time inputs, you can specify the minimum and maximum values, as well as how much they should each increment/decrement when adjusted by the slider or spinners. For example, a shoe size input would set a minimum size of 1 and a maximum size 13, with a step of 0.5
 
