@@ -5,6 +5,7 @@ A collection of wonderful things regarding the React ecosystem.
   - [BuildTools](#buildtools)
   - [Login](#login)
   - [Payment-gateway](#payment-gateway)
+  - [Forms](#forms)
   - [Utils](#utils)
 
 ### React
@@ -16,6 +17,10 @@ A collection of wonderful things regarding the React ecosystem.
 ### Login
   - [Supabase](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Login/Supabase.md)
     - [Docs](https://supabase.com/docs/guides/auth/auth-email)
+
+### Forms
+  - [AwesomeForms](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Forms/AwesomeForms/AmazingForms.md)
+  - [Docs](https://developers.google.com/web/fundamentals/design-and-ux/input/forms)
 
 ### Payment-Gateway
   - [Flutterwave](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/PaymentGateway/Flutterwave.md)
