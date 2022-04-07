@@ -37,4 +37,4 @@ A collection of wonderful things regarding the React ecosystem.
 - [SOLID](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/SOLID_Principles/solid-principles.md)
   - [Docs_1](https://www.everydayreact.com/articles/solid-principles-in-react)
   - [Docs_2](https://www.youtube.com/watch?v=9PgcXvqIaos&t=4s)
-  - [Docs_2](https://www.youtube.com/watch?v=UQqY3_6Epbg&t=91s)
+  - [Docs_3](https://www.youtube.com/watch?v=UQqY3_6Epbg&t=91s)
