@@ -15,15 +15,14 @@
 - Install ethersproject.
 <br/>
     > Ethers project is mandatory for web3-react
+    
   ```
-  javascript
   npm i @ethersproject/providers @ethersproject/units @web3-react/authereum-connector
   ```
   <br/>
 - Install necessary Connectors.
 
    ``` 
-   javascript
     npm i @web3-react/injected-connector @web3-react/walletconnect-connector @web3-react/walletlink-connector @web3-react/fortmatic-connector
    ```
     
