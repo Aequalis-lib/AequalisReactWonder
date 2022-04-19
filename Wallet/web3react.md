@@ -14,14 +14,16 @@
     ```
 - Install ethersproject.
 <br/>
-    > you can use ethersprojuct. Ethers projuct is mandatory for web3-react
-  ```javascript
+    > Ethers project is mandatory for web3-react
+  ```
+  javascript
   npm i @ethersproject/providers @ethersproject/units @web3-react/authereum-connector
   ```
   <br/>
 - Install necessary Connectors.
 
-   ``` javascript
+   ``` 
+   javascript
     npm i @web3-react/injected-connector @web3-react/walletconnect-connector @web3-react/walletlink-connector @web3-react/fortmatic-connector
    ```
     
