@@ -17,8 +17,11 @@ A collection of wonderful things regarding the React ecosystem.
   - [Vitejs](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/BuildTools/vitejs.md)
     - [Docs](https://vitejs.dev/guide/#overview)
 ### DevTools
-  - [ReactQuery](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/DevTools/ReactQuery/README.md)
+  - [React Query](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/DevTools/ReactQuery)
     - [Docs](https://react-query.tanstack.com/)
+
+  - [Redux Toolkit](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/DevTools/ReduxToolkit)
+    - [Docs](https://redux-toolkit.js.org/introduction/getting-started)
 ### Wallet
   - [Web3React](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Wallet/web3react.md)
     - [Docs](https://www.npmjs.com/package/@web3-react/core)
