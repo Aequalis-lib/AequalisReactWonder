@@ -1,0 +1,44 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "IronMan",
+      "alterEgo": "Robert Downey Jr"
+    },
+    {
+      "name": "sdefwe",
+      "alterEgo": "wewe",
+      "id": 4
+    },
+    {
+      "name": "logesh",
+      "alterEgo": "sds",
+      "id": 5
+    },
+    {
+      "name": "lk",
+      "alterEgo": "lk",
+      "id": 6
+    },
+    {
+      "name": "dhanraj",
+      "alterEgo": "dev",
+      "id": 7
+    },
+    {
+      "name": "praveen",
+      "alterEgo": "dev",
+      "id": 8
+    }
+  ]
+}

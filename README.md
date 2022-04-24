@@ -3,6 +3,7 @@ A collection of wonderful things regarding the React ecosystem.
 
 - [React](#react)
   - [BuildTools](#buildtools)
+  - [DevTools](#devtools)
   - [Wallet](#wallet)
   - [Login](#login)
   - [Payment-gateway](#payment-gateway)
@@ -15,6 +16,9 @@ A collection of wonderful things regarding the React ecosystem.
 ### BuildTools
   - [Vitejs](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/BuildTools/vitejs.md)
     - [Docs](https://vitejs.dev/guide/#overview)
+### DevTools
+  - [ReactQuery](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/DevTools/ReactQuery/README.md)
+    - [Docs](https://react-query.tanstack.com/)
 ### Wallet
   - [Web3React](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Wallet/web3react.md)
     - [Docs](https://www.npmjs.com/package/@web3-react/core)
