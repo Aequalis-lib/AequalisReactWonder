@@ -14,22 +14,23 @@
     ```
 - Install ethersproject.
 <br/>
-    > you can use ethersprojuct. Ethers projuct is mandatory for web3-react
+    > Ethers project is mandatory for web3-react
+    
   ```
   npm i @ethersproject/providers @ethersproject/units @web3-react/authereum-connector
   ```
   <br/>
 - Install necessary Connectors.
 
-    ``` 
+   ``` 
     npm i @web3-react/injected-connector @web3-react/walletconnect-connector @web3-react/walletlink-connector @web3-react/fortmatic-connector
-    ```
+   ```
+    
     1.injected - metamask  
     2.walletLInk - coinbase  
     3.walletconnect - walletconnect  
     4.fortmatic - fortmatic  
-<br/>
-
+    
 - Create a provider for web3React in App.js.
     ```javascript
     import { Web3ReactProvider} from "@web3-react/core";
@@ -166,9 +167,11 @@
     above function will activate that wallet. Then you can get datas from useWeb3React Hook or context. 
     use deactivate function for Disconnect wallet.
 <br/>
+
 - Create a myComponant.js for connecting wallet ui.
-    -imports:
-    ```javascript
+   -imports:
+    
+   ```javascript
     import React from "react";
     import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
     import { NoEthereumProviderError,UserRejectedRequestError as UserRejectedRequestErrorInjected} from "@web3-react/injected-connector";
@@ -178,10 +181,10 @@
 
     import { injected, walletconnect } from "./connectors";
     import { useEagerConnect, useInactiveListener } from "./hooks";
-    ```
+   ```
     - Error message Function :
 
-    ```javascript
+   ```javascript
     export function getErrorMessage(error) {
         if (error instanceof NoEthereumProviderError) {
             return "No Ethereum browser extension detected, install MetaMask on desktop or visit from a dApp browser on mobile.";
@@ -198,18 +201,18 @@
             return "An unknown error occurred. Check the console for more details.";
         }
     }
-    ```
+   ```
     connectors store const variable:
 
-    ```javascript
+   ```javascript
     export const connectorsByName = {
         Injected: injected,
         WalletConnect: walletconnect,
     };
-    ```
+   ```
     connectors store const variable:
     
-    ```javascript
+   ```javascript
 
     const MyComponent = () => {
         const context = useWeb3React();
@@ -373,7 +376,7 @@
     };
 
     export default MyComponent;
-    ```
+   ```
 
 ## Reference :
 
