@@ -23,8 +23,7 @@ A collection of wonderful things regarding the React ecosystem.
   - [Redux Toolkit](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/DevTools/ReduxToolkit)
     - [Docs](https://redux-toolkit.js.org/introduction/getting-started)
 ### Wallet
-  - [Web3React](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Wallet/web3react.md)
-    - [Docs](https://www.npmjs.com/package/@web3-react/core)
+  - [Web3React](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Wallet/Web3React)
 
 ### Login
   - [Supabase](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Login/Supabase.md)
