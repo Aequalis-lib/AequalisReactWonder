@@ -31,8 +31,9 @@ A collection of wonderful things regarding the React ecosystem.
 
 ### Forms
   - [AwesomeForms](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Forms/AwesomeForms/AmazingForms.md)
-  - [Docs](https://developers.google.com/web/fundamentals/design-and-ux/input/forms)
-
+    - [Docs](https://developers.google.com/web/fundamentals/design-and-ux/input/forms)
+ - [React Hook Form](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Forms/react-hook-form.md)
+    - [Docs](https://react-hook-form.com/)
 ### Payment-Gateway
   - [Flutterwave](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/PaymentGateway/Flutterwave.md)
     - [Docs](https://github.com/Flutterwave/Flutterwave-React-v3)
