@@ -6,36 +6,6 @@ Installing React Hook Form only takes a single command and you're ready to roll.
 ```javascript
     npm install react-hook-form
 ```
-
-```javascript
-    import React from "react";
-import { useForm } from "react-hook-form";
-
-export default function App() {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-
-  console.log(watch("firstName")); // watch input value by passing the name of it
-
-  return (
-    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)}>
-       <input {...register("firstName", { required: true, maxLength: 20 })} />
-      {errors.firstName?.type === "required" && "First name is required"}
-      
-      <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} />
-      
-      <select {...register("gender")}>
-        <option value="female">female</option>
-        <option value="male">male</option>
-        <option value="other">other</option>
-      </select>
-      
-      <input type="submit" />
-    </form>
-  );
-}
-```
 ### `Register fields`
 One of the key concepts in React Hook Form is to register your component into the hook. This will make its value available for both the form validation and submission.
 
@@ -107,6 +77,45 @@ You can get the form errors by using the hook.
             <input type="submit" />
         </form>
         );
+    }
+```
+### `Schema Validation`
+You can also use your own schema validation function.
+
+```javascript
+    import React from "react";
+    import { useForm } from "react-hook-form";
+
+    export default function App() {
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => console.log(data);
+    
+    const schema = {
+        firstName: {
+            required: true,
+            minLength: 5,
+            maxLength: 20,
+            pattern: /^[A-Za-z]+$/i
+        },
+        lastName: {
+            required: true,
+            minLength: 5,
+            maxLength: 20,
+            pattern: /^[A-Za-z]+$/i
+        },
+        age: {
+            required: true,
+            min: 18,
+            max: 99
+        }
+    };
+    
+    return (
+        <form onSubmit={handleSubmit(onSubmit)}>
+        <input {...register(schema)} />
+        <input type="submit" />
+        </form>
+    );
     }
 ```
 ### `Custom validation`
