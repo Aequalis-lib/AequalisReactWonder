@@ -55,7 +55,11 @@ A collection of wonderful things regarding the React ecosystem.
 ### Utils
 
 - [Lodash](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/lodash.md)
+
   - [Docs](https://lodash.com/docs)
+
+- [React_portal](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/react-portals.md)
+  - [Docs](https://reactjs.org/docs/portals.html)
 
 ### SOLID Principles
 
