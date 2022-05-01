@@ -45,6 +45,8 @@ A collection of wonderful things regarding the React ecosystem.
   - [Docs](https://developers.google.com/web/fundamentals/design-and-ux/input/forms)
 - [React Hook Form](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Forms/react-hook-form.md)
   - [Docs](https://react-hook-form.com/)
+- [Formik](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Forms/formik.md)
+  - [Docs](https://formik.org/docs/overview)
 
 ### Payment-Gateway
 
