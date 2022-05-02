@@ -3,7 +3,7 @@
 Author: "THANUSH PRAVEEN"
 Source: "UDEMY"
 DATE: "2020-05-02"
-EstimatedTime - 1hr
+EstimatedTime: 1hr
 
 ---
 
