@@ -17,6 +17,7 @@ A collection of wonderful things regarding the React ecosystem.
 
 - [AWS](#aws)
   - [IAM](#iam)
+  - [EC2](#ec2)
   
 ### React
 
@@ -88,3 +89,4 @@ A collection of wonderful things regarding the React ecosystem.
 ### AWS
 ### IAM
 - [IAM](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/AWS/IAM.md)
+- [EC2](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/AWS/EC2.md)
