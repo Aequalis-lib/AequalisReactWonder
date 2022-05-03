@@ -14,7 +14,7 @@ IAM is a service that allows you to create and manage AWS Identity and Access Ma
 
 This section will cover the basics of IAM.
 
-```
+``` text
 Note : 
 1) IAM doesnot need region.
 2) Try to avoid using the root user login, as it contains all the permissions.
@@ -22,9 +22,9 @@ Note :
 (SUGGESTED MFA is Authy by Twillio )
 ```
 
-**Create an IAM user**
+#### Create an IAM user
 
-```
+``` text
 1) Click on Add users on the home page.
 
 2) Enter the user name and select the acceess type the next page.
@@ -57,7 +57,7 @@ IAM policies are used to control access to AWS resources.
 
 ## How can user access the AWS resources?
 
-``` markdown
+``` text
     1) AWS Management Console
 
     2) AWS CLI (Tool to access AWS from command-line shell used to direct access to the 
@@ -76,16 +76,32 @@ IAM policies are used to control access to AWS resources.
 
 This topic describes how to install or update the latest release of the AWS Command Line Interface (AWS CLI) on supported operating systems.
 
-> https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-
+> <https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html>
 > Note: Use ***aws --version*** to check the version of the AWS CLI.
-
 > Use ***aws configure*** and enter the following:
 
-```
+``` text
     1) Region
     2) Access Key ID
     3) Secret Access Key
 ```
 
 > Use ***aws iam list-users*** to check the users.
+>
+> Note: You can also use AWS cloudshell to access the AWS CLI.
+
+## IAM Security Tools
+
+> Use ***Security credentials*** and ***access advisor*** to audit the security of your AWS account.
+
+## IAM Guidelines & Best Practices
+
+    + Don't use the root user login except for AWS account setup.
+    + One Physical user = One AWS user.
+    + Assign users to groups and assign permissions to groups.
+    + Create a strong password policy.
+    + Use and enforce the use of MFA(Multi Factor Authentication).
+    + Create and use Roles for giving permissions to AWS services.
+    + Use Access keys to access AWS resources Programmatically(CLI/SDK).
+    + Audit permissions of your account with the IAM Credentials Report.
+    + Never Share IAM users & Access keys.
