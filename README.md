@@ -3,6 +3,7 @@
 A collection of wonderful things regarding the React ecosystem.
 
 - [React](#react)
+
   - [BuildTools](#buildtools)
   - [DevTools](#devtools)
   - [Wallet](#wallet)
@@ -14,11 +15,15 @@ A collection of wonderful things regarding the React ecosystem.
   - [React-router-v6](#react-router-v6)
   - [UI-libraries](#ui-libraries)
 
-
 - [AWS](#aws)
+
   - [IAM](#iam)
   - [EC2](#ec2)
-  
+
+- [Strapi](#strapi)
+
+  - [Data-import](#data-import)
+
 ### React
 
 ### BuildTools
@@ -87,6 +92,13 @@ A collection of wonderful things regarding the React ecosystem.
   - [Docs](https://styled-components.com/docs)
 
 ### AWS
+
 ### IAM
+
 - [IAM](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/AWS/IAM.md)
 - [EC2](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/AWS/EC2.md)
+
+### Strapi
+
+- [Data-import](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Strapi/Data-Import-from-file.md)
+  - [Youtube](https://youtu.be/-NuExe4NfpQ)
