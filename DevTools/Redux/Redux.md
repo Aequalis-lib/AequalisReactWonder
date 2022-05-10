@@ -109,8 +109,8 @@ An action object can have other fields with additional information about what ha
 
 ```javascript
 const addTodoAction = {
-  type: 'add-todo',
-  payload: 'Nataraj pencil',
+  type: "add-todo",
+  payload: "Nataraj pencil",
 };
 ```
 
@@ -121,7 +121,7 @@ An **_action creator_** is a function that creates and returns an action object.
 ```javascript
 const addTodo = (text) => {
   return {
-    type: 'add-todo',
+    type: "add-todo",
     payload: text,
   };
 };
@@ -144,7 +144,7 @@ const initialState = { value: 0 };
 
 const counterReducer = (state = initialState, action) => {
   // Check to see if the reducer cares about this action
-  if (action.type === 'increment') {
+  if (action.type === "increment") {
     // If so, make a copy of `state`
     return {
       ...state,
@@ -162,8 +162,8 @@ const counterReducer = (state = initialState, action) => {
 The current Redux application state lives in an object called the `store` .
 
 ```javascript
-import { createStore } from 'redux';
-import rootReducer from './reducers';
+import { createStore } from "redux";
+import rootReducer from "./reducers";
 
 const initialState = {};
 
@@ -179,7 +179,7 @@ The redux store has a methods called `getState` and `dispatch`.
 The only way to update the state is to call **`store.dispatch()`** and pass in an action object.
 
 ```javascript
-store.dispatch({ type: 'increment' });
+store.dispatch({ type: "increment" });
 
 console.log(store.getState());
 // {value: 1}
@@ -190,7 +190,7 @@ console.log(store.getState());
 ```javascript
 const increment = () => {
   return {
-    type: 'counter/increment',
+    type: "counter/increment",
   };
 };
 
@@ -219,15 +219,15 @@ console.log(store.getState());
 
   **`Here's what that data flow looks like visually :`**
 
-  ![Redux work flow](./images/redux-flow.gif)
+  ![Redux work flow](./images/redux-data-flow.gif)
 
   ### Set-up
 
   Initialise and provide store to the components.
 
   ```javascript
-  import { createStore } from 'redux';
-  import rootReducer from './reducers';
+  import { createStore } from "redux";
+  import rootReducer from "./reducers";
 
   const initialState = {};
 
@@ -239,9 +239,9 @@ console.log(store.getState());
   Here we can send another argument to createStore method which is middleware.
 
   ```javascript
-  import { createStore, applyMiddleware } from 'redux';
-  import thunk from 'redux-thunk';
-  import rootReducer from '../reducers';
+  import { createStore, applyMiddleware } from "redux";
+  import thunk from "redux-thunk";
+  import rootReducer from "../reducers";
 
   const initialState = {};
 
@@ -285,10 +285,10 @@ console.log(store.getState());
   ### Redux devtool configuration & applying custom middlewares
 
   ```javascript
-  import { createStore, applyMiddleware, compose } from 'redux';
-  import rootReducer from './reducers';
-  import thunk from 'redux-thunk';
-  import { customMiddleware } from '../middlewares';
+  import { createStore, applyMiddleware, compose } from "redux";
+  import rootReducer from "./reducers";
+  import thunk from "redux-thunk";
+  import { customMiddleware } from "../middlewares";
 
   const initialState = {};
   let middleware = applyMiddleware(thunk, customMiddleware);
@@ -304,9 +304,9 @@ console.log(store.getState());
   Once the store is created, we can make it available to our React components by putting a React-Redux `<Provider>` around our application in `src/App.js`. Import the Redux store we just created, put a `<Provider>` around your `<App>`, and pass the store as a prop:
 
   ```javascript
-  import React from 'react';
-  import { Provider } from 'react-redux';
-  import store from '../store';
+  import React from "react";
+  import { Provider } from "react-redux";
+  import store from "../store";
 
   const App = () => (
     <Provider store={store}>
@@ -326,14 +326,14 @@ console.log(store.getState());
 
   const CounterReducer = (state = initialState, action) => {
     switch (action.type) {
-      case 'increment': {
+      case "increment": {
         state = {
           ...state,
           count: state.count + 1,
         };
         break;
       }
-      case 'decrement': {
+      case "decrement": {
         state = {
           ...state,
           count: state.count - 1,
@@ -353,9 +353,9 @@ console.log(store.getState());
 ### Creating actions
 
 ```javascript
-const increment = () => ({ type: 'increment' });
+const increment = () => ({ type: "increment" });
 
-const decrement = () => ({ type: 'increment' });
+const decrement = () => ({ type: "increment" });
 ```
 
 ### Use Redux State and Actions in React Components
@@ -363,9 +363,9 @@ const decrement = () => ({ type: 'increment' });
 Now we can use the React-Redux hooks to let React components interact with the Redux store. We can read data from the store with `useSelector`, and dispatch actions using `useDispatch`. Create a `src/Counter.js` file with a `<Counter>` component inside, then import that component into `App.js` and render it inside of `<App>`.
 
 ```javascript
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment } from './CounterReducerActions';
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "./CounterReducerActions";
 
 const Counter = () => {
   const count = useSelector((state) => state.CounterReducer.count);
@@ -374,11 +374,17 @@ const Counter = () => {
   return (
     <div>
       <div>
-        <button aria-label="Increment value" onClick={() => dispatch(increment())}>
+        <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
+        >
           Increment
         </button>
         <span>{count}</span>
-        <button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
+        <button
+          aria-label="Decrement value"
+          onClick={() => dispatch(decrement())}
+        >
           Decrement
         </button>
       </div>
@@ -398,9 +404,9 @@ Now, any time you click the `"Increment"` and `"Decrement"` buttons:
 Consider that we have two reducers called CounterReducer and UserReducer.
 
 ```javascript
-import { combineReducers } from 'redux';
-import UserReducer from './UserReducer';
-import CounterReducer from './CounterReducer';
+import { combineReducers } from "redux";
+import UserReducer from "./UserReducer";
+import CounterReducer from "./CounterReducer";
 
 export default combineReducers({ UserReducer, CounterReducer });
 ```
