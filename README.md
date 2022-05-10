@@ -38,7 +38,11 @@ A collection of wonderful things regarding the React ecosystem.
   - [Docs](https://react-query.tanstack.com/)
 
 - [Redux Toolkit](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/DevTools/ReduxToolkit)
+
   - [Docs](https://redux-toolkit.js.org/introduction/getting-started)
+
+- [Redux](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/DevTools/Redux/Redux.md)
+  - [Docs](https://redux.js.org/)
 
 ### Wallet
 
