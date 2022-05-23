@@ -1,15 +1,28 @@
+---
+Author: "VINOTHKUMAR S"
+Source: "Google"
+DATE: "2022-04-07"
+EstimatedTime: 1.5hrs
+---
+
 # SOLID principles in React
 
 Good code is, in general, characterised by being a mixture of three things :
 
 ## `Functional`
- The code comes together to create the desired functionality.
+
+The code comes together to create the desired functionality.
+
 ## `Maintainable`
- It is easy to make alterations, to add new features, and for other developers to understand how the code functions.
+
+It is easy to make alterations, to add new features, and for other developers to understand how the code functions.
+
 ## `Robust`
- The software is hard to break due to a great test suite, and handles errors appropriately when they happen.
+
+The software is hard to break due to a great test suite, and handles errors appropriately when they happen.
 
 ## What is SOLID?
+
 **SOLID** is an acronym for five separate design principles:
 
 - Single Responsibility Principle **(SRP)**.
@@ -56,7 +69,7 @@ Good code is, in general, characterised by being a mixture of three things :
 
 `<TodoItem />` doesn't care about how many todos there are, where they came from, or on what page they will be displayed. It just knows it will receive an `id` and `title`, and should return a `<li>` containing that information.
 
-***`Use a combination of separate components and custom hooks to modularise larger components.`***
+**_`Use a combination of separate components and custom hooks to modularise larger components.`_**
 
 **Combination with hook**
 
@@ -65,12 +78,15 @@ Good code is, in general, characterised by being a mixture of three things :
 ## Open/Closed Principle (OCP)
 
 ### Formal definition
+
 **software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification**
 
 ### Informal definition
+
 **You should be able to add functionality to some module, without modifying its existing source code**
 
 > note : You should aware of both Inheritance and Composition. (use below links)
+
 - [reference link_1](https://javascript.plainenglish.io/inheritance-is-a-vs-composition-has-a-in-javascript-98fb96dfa0e6)
 - [reference link_2](https://www.programiz.com/javascript/inheritance#:~:text=Inheritance%20enables%20you%20to%20define,feature%20that%20allows%20code%20reusability.)
 
@@ -93,10 +109,12 @@ Good code is, in general, characterised by being a mixture of three things :
 ## Liskov Substitution Principle (LSP)
 
 ### Formal definition
+
 - **Make classes substitutable for subclasses.**
 - **If B extends A, anywhere you use A you should be able to use B.**
 
 ### Informal definition
+
 **When extending a class or implementing an interface,my new class must be able to be used everywhere the parent class or interface is used without unexpected consequences / side effects.**
 
 ### Using this in React :
@@ -114,10 +132,12 @@ Good code is, in general, characterised by being a mixture of three things :
 ## Interface Segregation Principle (ISP)
 
 ### Formal definition
+
 - **Don't make a component rely on props it doesn't care about.**
 - **Many client specific interfaces are better than one general-purpose interface.**
 
 ### Informal definition
+
 - **Only pass a component props it needs.**
 - **A client should only have knowledge of the methodsit is actually going to need.**
 
@@ -129,23 +149,23 @@ Good code is, in general, characterised by being a mixture of three things :
 
 ![new formatted user](images/ISP_user_changed.png)
 
- we have broken our `<DisplayUser />` component as props.user.name is undefined!
+we have broken our `<DisplayUser />` component as props.user.name is undefined!
 
- **`with principle :`**
+**`with principle :`**
 
 ![with ISP](images/ISP_better.png)
 
 > Destructure out the needed props for a component if possible. This way, the component does not rely on the details in its parent component.
 
 ### React vs ReactDOM
+
 - The seperation of React and ReactDOM into different packages is a large-scale implementation of this principle.
 - React is responsible for the Virtual DOM and translating JSX,while ReactDOM does the heavy lifting of DOM manipulation.
 
 ## Dependency Inversion Principle (DIP)
 
-
 - **High-level code shouldn't depend on implementation details - always use an abstraction.**
-- **The DIP tells us that we should `"hide the wiring behind the wall"` by always interacting with low-level details via abstractions.****
+- **The DIP tells us that we should `"hide the wiring behind the wall"` by always interacting with low-level details via abstractions.\*\***
 - **This has strong ties to the `SRP` and the `ISP` detailed above.**
 
 ### Layers of abstraction
@@ -163,7 +183,7 @@ Good code is, in general, characterised by being a mixture of three things :
 we have many implementation details buried within `<TodosPage />`.
 
 **`with principle :`**
- 
+
 ![with DIP](images/DIP_layer_1.png)
 
 > "This is rude! The programmer is taking you from the heights [high-level concepts] to the depths [low-level concepts] in one line.".
