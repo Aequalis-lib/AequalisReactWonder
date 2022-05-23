@@ -361,7 +361,7 @@ If you're having trouble, check out the [Resources](https://reactrouter.com/docs
 
 ## Assessment :
 
-1. Create nav-bar with sports and about links.
+1. Create nav-bar with sports and about links (should visible for all pages).
 2. By default ('/home' or '/') should render form page where you can add sport name to the sports group.<br/>
    `2(a)-->`Should show count of each sport group above the sport form,get the count data from search params.
 3. Form elements are sport name,group(ex:indoor,outdoor)
@@ -370,5 +370,5 @@ If you're having trouble, check out the [Resources](https://reactrouter.com/docs
 5. On clicking sports tab redirect the page to '/sports' and show two cards named indoor and outdoor
 6. On clicking, one of those cards should render the list of sport names(ex:chess for indoor and cricket for outdoor) comes under that particular group below that card.
 7. On clicking one of the sports name that rendered below the card you should render images relevent to that particular sport/game below the sport name.
-   8.Points 5,6,7 should render on same page(nested).
-8. On clicking about page you should render definition of each sport.
+8. **Points 5,6,7 should render on same page(nested).**
+9. On clicking about page you should render definition of each sport.
