@@ -78,6 +78,10 @@ A collection of wonderful things regarding the React ecosystem.
 - [React_portal](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/react-portals.md)
   - [Docs](https://reactjs.org/docs/portals.html)
 
+- [Recharts](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/RECHARTS)
+
+  - [Docs](https://recharts.org/)
+
 ### SOLID Principles
 
 - [SOLID](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/SOLID_Principles/solid-principles.md)
