@@ -82,7 +82,7 @@ A collection of wonderful things regarding the React ecosystem.
 
   - [Docs](https://recharts.org/)
 
--[Encryption](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/encryption.md)
+- [Encryption](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/encryption.md)
 
 ### SOLID Principles
 
