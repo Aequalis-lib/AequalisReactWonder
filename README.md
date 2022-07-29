@@ -82,6 +82,8 @@ A collection of wonderful things regarding the React ecosystem.
 
   - [Docs](https://recharts.org/)
 
+-[Encryption](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/encryption and decryption on nodejs and react.md)
+
 ### SOLID Principles
 
 - [SOLID](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/SOLID_Principles/solid-principles.md)
