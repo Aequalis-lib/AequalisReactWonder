@@ -1,6 +1,10 @@
 ## encryption and decryption on nodejs and react
 
+> npm i crypto-js
+
 ```
+var CryptoJS = require('crypto-js')
+
 export const decryptCrypto = (data) => {
   let salt = process.env.REACT_APP_SERCET_KEY ?? ''
   var bytes = CryptoJS.AES.decrypt(data, salt)
