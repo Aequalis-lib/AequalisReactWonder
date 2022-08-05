@@ -51,7 +51,12 @@ A collection of wonderful things regarding the React ecosystem.
 ### Login
 
 - [Supabase](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Login/Supabase.md)
+
   - [Docs](https://supabase.com/docs/guides/auth/auth-email)
+
+- [MagicAuth](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Login/Magic-auth.md)
+
+  - [Docs](https://magic.link/docs/home/welcome)
 
 ### Forms
 
@@ -76,6 +81,7 @@ A collection of wonderful things regarding the React ecosystem.
   - [Docs](https://lodash.com/docs)
 
 - [React_portal](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/react-portals.md)
+
   - [Docs](https://reactjs.org/docs/portals.html)
 
 - [Recharts](https://github.com/Aequalis-lib/AequalisReactWonder/blob/main/Utils/Recharts)
