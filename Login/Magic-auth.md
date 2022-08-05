@@ -1,8 +1,8 @@
 ---
 Author: "VINOTHKUMAR S"
-Source: "Google"
-DATE: "2022-04-07"
-EstimatedTime: 1.5hrs
+Source: "Magic link"
+DATE: "05-08-2022"
+EstimatedTime: 1hr
 ---
 
 # Magic Auth
