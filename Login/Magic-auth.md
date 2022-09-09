@@ -332,3 +332,29 @@ If you're having trouble, check out the [Resources](https://magic.link/docs/home
 ## Assessment :
 
 Create one login page which have both email and SMS login using magic and redirect the page to authenticated page.
+
+### Server side
+
+## using strapi
+
+> note : Magic is supported till strapiV3
+
+```javascript
+//NPM
+
+npm install strapi-plugin-magic
+
+After installation do the below command to rebuild the admin UI
+
+npm run develop
+```
+
+Please refer the below repo for further procedure/reference
+
+Docs --> [Instalation guide for strapi plugin magic ](https://magic.link/posts/magic-strapi-plugin)
+
+Repository --> [strapi-magic-demo](https://github.com/GalloDaSballo/strapi-magic-demo)
+
+## Assessment :
+
+Create one strapi project and use magic login for authentication.
