@@ -2,6 +2,8 @@
 
 ### __AUTHOR : R.GOWTHAM__
 ---
+[Click here for session video of Analysing performance of Arrays & Objects ](https://drive.google.com/drive/folders/1To9oeIwB-teV-qHaLeDhYeBRa813Bycz)
+
 ## __Objects__
 
 * An Object is a collection of Key , Value Pairs  
