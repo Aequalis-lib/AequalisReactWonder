@@ -1,5 +1,7 @@
 # Big O Notation
 
+### __AUTHOR : RAVIPRASAD.E__
+
 [Click here for Big-O-Notation session video](https://drive.google.com/file/d/1LJRAkAYpATLprMGbp9q-pVut2_yXJBYF/view?usp=sharing)
 
 [click here to view the examples with graph](https://rithmschool.github.io/function-timer-demo/)
@@ -40,6 +42,9 @@ function addUpto(n) {
 - number of operations is(eventualy) bounded by the multiple of n, so 5n + 2
 - if the input grows the runtime of the operation will also grows
 
+#### In the above example runtime of the functionality increases depending upon the n numbers of input.
+___ 
+
 ### Example 2 :
 
 ```javascript
@@ -56,6 +61,9 @@ function addUpto(n) {
 - 1 division
 - 1 division
 - Even the input grows the runtime of the operation will only vary a little.
+
+#### In the above example runtime of the functionality will remain constant even the n numbers of input increases.
+___ 
 
 ### Example 3 :
 
@@ -76,6 +84,8 @@ function printAllPairs(n) {
 - n number of operations inside n numbers of operations
 - As input grows runtime will grow exponenitally.
 
+#### In the above example runtime of the functionality will increase exponentially depending upon the n numbers of input.
+___ 
 ## Space Complexity
 
 - As the n grows, the size of the input will also grow
