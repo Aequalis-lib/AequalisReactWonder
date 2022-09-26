@@ -4,7 +4,7 @@
 
 ---
 
-[Click here for session video of problem solving approach (Soon it wiil be added) ]()
+[Click here for session video of problem solving approach](https://drive.google.com/file/d/15JHTcp01H_I02Tybz2hwmWSd8_EbNKva/view?usp=sharing)
 
 ### What is an Algorithm?
 
