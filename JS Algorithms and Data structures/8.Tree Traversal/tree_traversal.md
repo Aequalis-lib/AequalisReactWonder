@@ -8,6 +8,10 @@
 
 ---
 
+<br/>
+
+[Click here for the session video of tree traversal!](https://drive.google.com/file/d/1xoSGGcHGADmUMzUmn4jcJILVt-lVYWpy/view?usp=sharing)
+
 ### **General Application:**
 
 - ### Traversing through an tree for all it's operations.
